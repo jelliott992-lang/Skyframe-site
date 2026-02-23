@@ -33,5 +33,42 @@ export default function DashboardPage() {
           >
             <h2>Access Control</h2>
             <p style={{ marginTop: "0.5rem" }}>
-              Manage
+              Manage secure access to your Skyframe environments.
+            </p>
+          </div>
+
+          <div
+            style={{
+              padding: "1.5rem",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              background: "#fafafa",
+            }}
+          >
+            <h2>Environment Insights</h2>
+            <p style={{ marginTop: "0.5rem" }}>
+              View system health, performance, and usage analytics.
+            </p>
+          </div>
+
+          <div
+            style={{
+              padding: "1.5rem",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              background: "#fafafa",
+            }}
+          >
+            <h2>Activity Logs</h2>
+            <p style={{ marginTop: "0.5rem" }}>
+              Track recent actions and system events.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}
 

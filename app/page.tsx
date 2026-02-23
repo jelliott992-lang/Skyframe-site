@@ -58,5 +58,58 @@ export default function HomePage() {
 
         <div
           style={{
-            margin
+            marginTop: "2rem",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "1.5rem",
+          }}
+        >
+          <div
+            style={{
+              padding: "1.5rem",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              background: "#fafafa",
+            }}
+          >
+            <h3>Secure Access</h3>
+            <p style={{ marginTop: "0.5rem" }}>
+              Built with modern authentication and zero‑trust principles.
+            </p>
+          </div>
+
+          <div
+            style={{
+              padding: "1.5rem",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              background: "#fafafa",
+            }}
+          >
+            <h3>Fast Performance</h3>
+            <p style={{ marginTop: "0.5rem" }}>
+              Powered by Next.js App Router and optimized for speed.
+            </p>
+          </div>
+
+          <div
+            style={{
+              padding: "1.5rem",
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              background: "#fafafa",
+            }}
+          >
+            <h3>Beautifully Simple</h3>
+            <p style={{ marginTop: "0.5rem" }}>
+              A clean, modern interface designed for clarity and focus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}
 
