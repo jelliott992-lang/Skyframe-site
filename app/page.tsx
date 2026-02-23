@@ -1,65 +1,104 @@
-import Image from "next/image";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
+      <Header />
+
+      {/* HERO SECTION */}
+      <section
+        style={{
+          marginTop: "3rem",
+          padding: "3rem 2rem",
+          background: "#ffffff",
+          borderRadius: "12px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+        }}
+      >
+        <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
+          Move Through the World with Confidence
+        </h1>
+
+        <p style={{ fontSize: "1.2rem", lineHeight: "1.6", maxWidth: "650px" }}>
+          Skyframe blends secure access, clean design, and seamless experiences
+          to help you navigate your digital and physical environments with clarity.
+        </p>
+
+        <button
+          style={{
+            marginTop: "2rem",
+            padding: "0.9rem 1.6rem",
+            fontSize: "1rem",
+            fontWeight: 600,
+            background: "#111",
+            color: "#fff",
+            border: "none",
+            borderRadius: "8px",
+            cursor: "pointer",
+          }}
+        >
+          Get Started
+        </button>
+      </section>
+
+      {/* FEATURES SECTION */}
+      <section style={{ marginTop: "4rem" }}>
+        <h2 style={{ fontSize: "1.8rem", marginBottom: "1.5rem" }}>
+          Why Skyframe?
+        </h2>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "1.5rem",
+          }}
+        >
+          <div
+            style={{
+              padding: "1.5rem",
+              background: "#fff",
+              borderRadius: "10px",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <h3 style={{ marginTop: 0 }}>Secure by Design</h3>
+            <p style={{ lineHeight: "1.5" }}>
+              Built with modern authentication and encrypted workflows from the
+              ground up.
+            </p>
+          </div>
+
+          <div
+            style={{
+              padding: "1.5rem",
+              background: "#fff",
+              borderRadius: "10px",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+            }}
           >
-            Documentation
-          </a>
+            <h3 style={{ marginTop: 0 }}>Effortless Experience</h3>
+            <p style={{ lineHeight: "1.5" }}>
+              Clean, intuitive interfaces that help you move quickly and stay
+              focused.
+            </p>
+          </div>
+
+          <div
+            style={{
+              padding: "1.5rem",
+              background: "#fff",
+              borderRadius: "10px",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+            }}
+          >
+            <h3 style={{ marginTop: 0 }}>Modular & Scalable</h3>
+            <p style={{ lineHeight: "1.5" }}>
+              A flexible architecture that grows with your needs — from personal
+              use to enterprise scale.
+            </p>
+          </div>
         </div>
-      </main>
-    </div>
-  );
-}
+      </section>
+
